@@ -93,6 +93,7 @@ body {
 }
 
 .custom-container{
+    width:80%;
     height:100px;
     padding-top:25px;
 }
