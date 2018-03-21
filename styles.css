@@ -44,13 +44,52 @@ table {
 
 /*End of Resets*/
 body { 
-    padding-top: 100px; 
+/*    padding-top: 100px; */
 }
+/*Default Classes*/
+
+.font{
+    font-family: 'Montserrat', sans-serif;
+    font-size:16px;
+    
+}
+.headerText{
+    width:90%;
+    font-size:45px;
+    margin:0 auto;
+    padding-bottom:20px;
+    color:white;
+    letter-spacing:5px;
+    font-weight:bold;
+    line-height:60px;
+}
+.subHeader{
+    padding-bottom:20px;
+    font-size:20px;
+    letter-spacing:5px;
+    
+    color:white;
+}
+.btn-head{
+    border-radius:2px;
+    background-color:#c1272d;
+    border:none;
+    font-size:18px;
+    transition: all ease-in .3s;
+}
+.btn-head:hover{
+    border-radius:2px;
+    background-color:#a92327;
+    border:none;
+    font-size:18px;
+}
+
 /*Beginning of Nav styles*/
 .navbar-custom{
     margin-bottom:0px;
     height:100px;
-
+    background-color:transparent;
+    border:none;
 }
 
 .custom-container{
@@ -65,17 +104,27 @@ body {
     
     
 }
+#bs-example-navbar-collapse-1 ul li a{
+    color:white;
+    transition:all ease-in .3s;
+}
+#bs-example-navbar-collapse-1 ul li a:hover{
+    color:#333;
+}
 .logo{
     width:200px;
     height:50px;
 }
 /*Beginning jumbotron styles*/
+
 #jumbotron{
-    background-color:crimson;
-     height: calc(100vh - 100px); 
+    background:url("background.jpg") no-repeat;
+    background-size: cover;
+   /* height: calc(100vh - 100px); */
+    height:100vh;
 }
 .jumboContent{
-   
+    padding-top:30vh;
     text-align:center;
 }
 /*This is the portfolio styles */
