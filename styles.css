@@ -55,13 +55,13 @@ body {
 }
 .headerText{
     width:90%;
-    font-size:45px;
+    font-size:60px;
     margin:0 auto;
     padding-bottom:20px;
     color:white;
     letter-spacing:5px;
     font-weight:bold;
-    line-height:60px;
+    line-height:80px;
 }
 .subHeader{
     padding-bottom:20px;
@@ -75,6 +75,10 @@ body {
     background-color:#c1272d;
     border:none;
     font-size:18px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:10px;
+    padding-bottom:10px;
     transition: all ease-in .3s;
 }
 .btn-head:hover{
@@ -91,13 +95,17 @@ body {
     background-color:transparent;
     border:none;
 }
-
+.container-fluid{
+    width:80%;
+}
 .custom-container{
     width:80%;
     height:100px;
     padding-top:25px;
 }
-
+.custom-fluid{
+    width:80%;
+}
 .custom-logo{
     margin-left:15px;
     
@@ -129,6 +137,9 @@ body {
     text-align:center;
 }
 /*This is the portfolio styles */
+#portfolio{
+    margin-bottom:30px;
+}
 .portImages {
     padding-left:0px;
     padding-right:0px;
@@ -139,6 +150,74 @@ body {
     vertical-align: middle;
     
 }
+#portfolio-intro{
+    padding:40px;
+   
+    background-color:#f6f6f6;
+}
+#portfolio-intro article > h2{
+    font-size:25px;
+    color:#a42121;
+    font-weight:bold;
+    text-align:center;
+    
+    
+}
+#portfolio-intro article > h3{
+    font-size:20px;
+    color:#232323;
+    font-weight:lighter;
+    text-align:center;
+    letter-spacing: 2px;
+}
+.portfolio-content{
+   line-height:50px;
+}
+#portfolio-intro article > h2::before,
+h2::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #a42121;
+    width: 20px;
+    margin: 1px 10px;
+    transform: translateY(-5px);
+}
+
+.filterable{
+    text-align:center;
+    padding:50px;
+}
+.filterable a{
+    padding:10px;
+    color:#232323;
+    
+}
+.filterable a:hover{
+    
+      color:#a42121;
+    
+}
+.filterable a:visited{
+    
+     text-decoration:none;
+    
+}
+.filterable > .activity{
+    color:#a42121;
+    font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     #bs-example-navbar-collapse-1{
