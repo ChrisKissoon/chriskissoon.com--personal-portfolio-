@@ -53,6 +53,9 @@ body {
     font-size:16px;
     
 }
+.bold{
+    font-weight:bolder;
+}
 .headerText{
     width:90%;
     font-size:60px;
@@ -127,7 +130,7 @@ body {
 /*Beginning jumbotron styles*/
 
 #jumbotron{
-    background:url("background.jpg") no-repeat;
+    background:url("images/background.jpg") no-repeat;
     background-size: cover;
    /* height: calc(100vh - 100px); */
     height:100vh;
@@ -169,9 +172,11 @@ body {
     font-weight:lighter;
     text-align:center;
     letter-spacing: 2px;
+    padding-top:20px;
+    line-height:30px;
 }
 .portfolio-content{
-   line-height:50px;
+  
 }
 #portfolio-intro article > h2::before,
 h2::after {
@@ -208,9 +213,38 @@ h2::after {
 }
 
 
-
-
-
+/*Services*/
+#services{
+    padding-top:50px
+}
+/*
+.serImages{
+    
+   width:25%;
+   
+    
+}
+*/
+.serImages > img{
+    width:160px;
+    height:auto;
+    
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.serImages > div{
+    padding-top:30px;
+    line-height:35px;
+}
+.serImages div > h3{
+    text-align:center;
+}
+.serImages div > p{
+    font-size:13px;
+    text-align:center;
+}
 
 
 
