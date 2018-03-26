@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -43,6 +44,13 @@ table {
 }
 
 /*End of Resets*/
+html { height: 100%; overflow:auto; }
+body { height: 100%; }
+body, html, .main {
+    height: 100%;
+}
+
+
 body { 
 /*    padding-top: 100px; */
 }
@@ -94,7 +102,7 @@ body {
 /*Beginning of Nav styles*/
 .navbar-custom{
     margin-bottom:0px;
-    height:100px;
+    height:80px;
     background-color:transparent;
     border:none;
 }
@@ -103,8 +111,8 @@ body {
 }
 .custom-container{
     width:80%;
-    height:100px;
-    padding-top:25px;
+    height:80px;
+    padding-top:15px;
 }
 .custom-fluid{
     width:80%;
@@ -127,9 +135,10 @@ body {
     width:200px;
     height:50px;
 }
+
 /*Beginning jumbotron styles*/
 
-#jumbotron{
+.jumbotron1{
     background:url("images/background.jpg") no-repeat;
     background-size: cover;
    /* height: calc(100vh - 100px); */
@@ -153,10 +162,31 @@ body {
     vertical-align: middle;
     
 }
-#portfolio-intro{
-    padding:40px;
+
+.portfolio-intro{
+    
+      padding:40px;
    
     background-color:#f6f6f6;
+    
+}
+
+.portfolio-intro article > h2{
+      font-size:25px;
+    color:#a42121;
+    font-weight:bold;
+    text-align:center;
+}
+.portfolio-intro article > h3{
+    font-size:20px;
+    color:#232323;
+    font-weight:lighter;
+    text-align:center;
+    letter-spacing: 2px;
+    padding-top:20px;
+    line-height:30px;
+    
+    
 }
 #portfolio-intro article > h2{
     font-size:25px;
@@ -178,7 +208,8 @@ body {
 .portfolio-content{
   
 }
-#portfolio-intro article > h2::before,
+
+.portfolio-intro article > h2::before,
 h2::after {
     display: inline-block;
     content: "";
@@ -214,8 +245,9 @@ h2::after {
 
 
 /*Services*/
-#services{
-    padding-top:50px
+.services{
+    padding-top:50px;
+    padding-bottom:50px;
 }
 /*
 .serImages{
@@ -245,12 +277,34 @@ h2::after {
     font-size:13px;
     text-align:center;
 }
+.story{
+    width:50%;
+    margin:0 auto;
+    padding:40px;
+}
+.story > p{
+    line-height:20px;
+    letter-spacing:2px;
+    text-align:center;
+    margin-bottom:20px;
+    font-size:16px;
+    font-weight:normal;
+}
+.story p > i{
+     font-style: italic;
+}
 
+.active1{
+    color:#c1272d !important ; 
+    font-weight:bold !important;
+}
 
-
-
-
-
+.navbar1{
+  height:80px;
+  transition: all .3s;
+  background-color:white;
+}
+. 
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -261,6 +315,36 @@ h2::after {
     }
     
 }
+
    
+@media screen and (min-width:1200px) and (max-width:1500px) {
+    
+    .serImages{
+        
+        width:50%;
+        
+        
+    }
+    
+
+}
+@media screen and (min-width:300px) and (max-width:1500px) {
+    
+    .serImages{
+        
+        width:50%;
+        
+        
+    }
+    .services .container-fluid  .serImages:nth-child(1){
+       
+       margin-bottom:40px;
+    }
+    .services .container-fluid  .serImages:nth-child(2){
+       
+       margin-bottom:40px;
+    }
+    
+
 }
 

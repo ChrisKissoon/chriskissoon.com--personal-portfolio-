@@ -17,7 +17,7 @@
 </head>
 
 <body class="font ">
-    <header>
+    <header  id="1" class="target">
         <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
             <div class="container-fluid custom-container">
                  <div class="navbar-header custom-header">
@@ -36,10 +36,10 @@
                  </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                      <ul class="nav navbar-nav navbar-right" >
-                        <li class=""><a href="#">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li ><a class="navEl"  href="#1">Home</a></li>
+                        <li  ><a class="navEl"  href="#2">Portfolio</a></li>
+                        <li  ><a  class="navEl"  href="#3">Service</a></li>
+                        <li  ><a class="navEl"  href="#4">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,7 +47,7 @@
         
     </header>
     
-    <section id="jumbotron">
+    <section class="jumbotron1">
         <div class="container jumboContent">
          <article>
             <h1 class="headerText">INCREASE YOUR REACH GET A CUSTOM WEBSITE</h1>
@@ -61,10 +61,10 @@
        </div>
     </section>
 
-    <section id="portfolio-intro">
+    <section id="2" class="portfolio-intro target">
         <div class="container-fluid portfolio-content">
-            <article><h2>Result Driven Websites</h2></article>
-            <article><h3>All of our web solutions are built with one thing in mind and that is to find you more business.</h3></article>
+            <article><h2 class="font">Result Driven Websites</h2></article>
+            <article><h3 class="font">All of our web solutions are built with one thing in mind and that is to find you more business.</h3></article>
         </div>
     </section>
     <section id="portfolio">
@@ -89,16 +89,17 @@
              <div class="col-lg-3 col-md-3 portImages"><img src="images/mealfixer.png"/></div>
          </div>
     </section>
-    <section id="portfolio-intro">
+    <section id="3" class="portfolio-intro target" id="servicesHeader">
         <div class="container-fluid portfolio-content">
-            <article><h2>Strategic Implementation</h2></article>
-            <article><h3>We integrate web design, copywriting and SEO to create a strong web strategy, your website needs to tell a story to let your potential customers know you are the go to place for their needs.</h3></article>
+            <article><h2 class="font">Strategic Implementation</h2></article>
+            <article><h3 class="font">We integrate web design, copywriting and SEO to create a strong web strategy, your website needs to tell a story to let your potential customers know you are the go to place for their needs.</h3></article>
         </div>
     </section>
    
-    <section id="services">
+    <section   class="services">
         <div class="container-fluid">
-             <div class="col-xs-6 col-sm-6 col-md-6  col-lg-3   serImages">
+            
+             <div class="col-xs-6 col-sm-6 col-md-6  col-lg-3  serImages">
                  <img src="images/settings.svg"/>
                <div><h3 class="bold">Web Development</h3>
                  <p>Functional | Responsive | Optimized & Clean Code</p></div>  
@@ -108,6 +109,7 @@
                  <div> <h3 class="bold">Web Design</h3>
                  <p>Define Goals | User Experience | Strategic Design</p></div> 
              </div>
+            
              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3  serImages">
                  <img src="images/edit.svg"/>
                 <div><h3 class="bold">Copywriting</h3>
@@ -121,11 +123,24 @@
             </div>
         </div>
     </section>
-    <section id="client-intro">
-        
+    <section class="portfolio-intro" >
+        <article class="container-fluid  portfolio-content">
+            <h2>Client Feedback</h2>
+        </article>
     </section>
     <section id="success-story">
-    
+      <div class="">
+        <div class="owl-carousel ">
+             <div class="story font"><p>Chris was great to work with, very helpful, knowledgable. He assisted me every step of the process and answered all of my questions. Chris and I had great communication during the entire process and he made many helpful suggestions. Can't wait to work with him again in the future. Thanks Chris.</p> 
+              <p><i>- Shayna Cornelius</i></p>
+             </div>
+              <div class="story font"> <p>"Chris was amazing!! I have worked with a few design companies for work and none of them have compared to how responsive, professional and helpful Chris was! Seriously so impressed! So happy to have found a reliable company who just "gets it". Telling all my friends and co-workers about them!"</p>
+              <p><i>- Chris H</i></p>
+             </div>
+          </div>
+              
+      </div>
+      
     
     </section>
     <section id="contact-form">
@@ -135,8 +150,10 @@
     <footer>
         <p>© 2018 Chris Kissoon All Rights Reserved</p> 
     </footer>
-    
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="scripts.js"></script>
 </body>
