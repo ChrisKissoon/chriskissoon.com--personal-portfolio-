@@ -7,6 +7,7 @@
   <title>ChrisKissoon.com</title>
   <meta name="Chriskissoon is a web developer building web applications" content="Web solutions and applicatios">
   <meta name="Chris Kissoon" content="Web development">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
@@ -69,7 +70,7 @@
     </section>
     <section id="portfolio">
         
-         <div class="container-fluid custom-fluid">
+         <div class="container custom-fluid">
              <div class="filterable">
                 <a class="activity" href="#">All</a>
                 <a href="#">Web Applications</a>
@@ -97,7 +98,7 @@
     </section>
    
     <section   class="services">
-        <div class="container-fluid">
+        <div class="container">
             
              <div class="col-xs-6 col-sm-6 col-md-6  col-lg-3  serImages">
                  <img src="images/settings.svg"/>
@@ -132,10 +133,10 @@
       <div class="">
         <div class="owl-carousel ">
              <div class="story font"><p>Chris was great to work with, very helpful, knowledgable. He assisted me every step of the process and answered all of my questions. Chris and I had great communication during the entire process and he made many helpful suggestions. Can't wait to work with him again in the future. Thanks Chris.</p> 
-              <p><i>- Shayna Cornelius</i></p>
+              <p class="client"><i>- Shayna Cornelius</i></p>
              </div>
               <div class="story font"> <p>"Chris was amazing!! I have worked with a few design companies for work and none of them have compared to how responsive, professional and helpful Chris was! Seriously so impressed! So happy to have found a reliable company who just "gets it". Telling all my friends and co-workers about them!"</p>
-              <p><i>- Chris H</i></p>
+              <p class="client"><i>- Chris H</i></p>
              </div>
           </div>
               
@@ -143,8 +144,20 @@
       
     
     </section>
+    <section class="portfolio-intro" >
+        <article class="container-fluid  portfolio-content">
+            <h2>Contact Form</h2>
+        </article>
+    </section>
     <section id="contact-form">
-    
+        <div class="container-fluid">
+            <form class="contact-form">
+                   <input name="firstName"  type="text" placeholder="FirstName"/><br><br>
+                   <input name="lastName" type="text" placeholder="LastName"/><br><br>
+                   <textarea id="msg" name="user_message" placeholder="Message"></textarea><br><br>
+                   <button class="btn btn-primary "name="submit" type="submit">Send</button>
+             </form>
+        </div>
     
     </section>
     <footer>

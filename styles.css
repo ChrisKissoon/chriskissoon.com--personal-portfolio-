@@ -139,8 +139,9 @@ body {
 /*Beginning jumbotron styles*/
 
 .jumbotron1{
-    background:url("images/background.jpg") no-repeat;
-    background-size: cover;
+    background: url("images/background.jpg") no-repeat;
+    background-attachment:scroll;
+     background-size: cover;
    /* height: calc(100vh - 100px); */
     height:100vh;
 }
@@ -246,9 +247,13 @@ h2::after {
 
 /*Services*/
 .services{
-    padding-top:50px;
-    padding-bottom:50px;
+    padding-top:100px;
+    padding-bottom:100px;
+     background-image: url("images/backgroundtexture.png");
+    background-repeat: no-repeat;
+  
 }
+
 /*
 .serImages{
     
@@ -280,7 +285,7 @@ h2::after {
 .story{
     width:50%;
     margin:0 auto;
-    padding:40px;
+    padding:100px;
 }
 .story > p{
     line-height:20px;
@@ -289,6 +294,9 @@ h2::after {
     margin-bottom:20px;
     font-size:16px;
     font-weight:normal;
+}
+.client{
+    margin-bottom:0px !important;
 }
 .story p > i{
      font-style: italic;
@@ -304,19 +312,85 @@ h2::after {
   transition: all .3s;
   background-color:white;
 }
-. 
+.contact-form{
+    
+    width:80%;
+    margin:0 auto;
+    text-align:center;
+    padding:40px;
+}
+.contact-form > input{
+    
+    width:30%;
+    height:50px;
+    border-radius:3px;
+    padding:20px;
+    border:1px solid #b3b3b3;
+    
+}
+.contact-form button{
+     width:30%;
+    height:50px;
+}
+.contact-form > textarea{
+    width:30%;
+    height:150px;
+    border-radius:3px;
+     border:1px solid #b3b3b3;
+    padding:20px;
+}
+footer{
+    text-align:center;
+}
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    .story{
+    width:80%;
+    margin:0 auto;
+    padding:100px;
+}
+    .contact-form > input{
+    
+    width:80%;
+    height:50px;
+    border-radius:3px;
+    padding:20px;
+    border:1px solid #b3b3b3;
+    
+}
+.contact-form button{
+     width:80%;
+    height:50px;
+}
+.contact-form > textarea{
+    width:80%;
+    height:150px;
+    border-radius:3px;
+     border:1px solid #b3b3b3;
+    padding:20px;
+}
+    
+    .container-fluid{
+    width:95%;
+}
+.custom-container{
+    width:95%;
+    height:80px;
+    padding-top:15px;
+}
+.custom-fluid{
+    width:95%;
+}
     #bs-example-navbar-collapse-1{
     border:none;
-        margin-top:17px;
-        background-color:#f9f9f9;
+       
+        background-color:none;
     }
     
 }
 
-   
+  
 @media screen and (min-width:1200px) and (max-width:1500px) {
     
     .serImages{
@@ -336,11 +410,11 @@ h2::after {
         
         
     }
-    .services .container-fluid  .serImages:nth-child(1){
+    .services .container  .serImages:nth-child(1){
        
        margin-bottom:40px;
     }
-    .services .container-fluid  .serImages:nth-child(2){
+    .services .container  .serImages:nth-child(2){
        
        margin-bottom:40px;
     }
