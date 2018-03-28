@@ -61,14 +61,14 @@
         </article>
        </div>
     </section>
-
+  <main>
     <section id="2" class="portfolio-intro target">
         <div class="container-fluid portfolio-content">
             <article><h2 class="font">Result Driven Websites</h2></article>
             <article><h3 class="font">All of our web solutions are built with one thing in mind and that is to find you more business.</h3></article>
         </div>
     </section>
-    <section id="portfolio">
+    <section id="portfolio" class="backgroundTexture">
         
          <div class="container custom-fluid">
              <div class="filterable">
@@ -97,7 +97,7 @@
         </div>
     </section>
    
-    <section   class="services">
+    <section   class="services backgroundTexture">
         <div class="container">
             
              <div class="col-xs-6 col-sm-6 col-md-6  col-lg-3  serImages">
@@ -129,7 +129,7 @@
             <h2>Client Feedback</h2>
         </article>
     </section>
-    <section id="success-story">
+    <section id="success-story " class="backgroundTexture">
       <div class="">
         <div class="owl-carousel ">
              <div class="story font"><p>Chris was great to work with, very helpful, knowledgable. He assisted me every step of the process and answered all of my questions. Chris and I had great communication during the entire process and he made many helpful suggestions. Can't wait to work with him again in the future. Thanks Chris.</p> 
@@ -144,18 +144,35 @@
       
     
     </section>
-    <section class="portfolio-intro" >
+    <section class="contactIntro target"  id="4">
         <article class="container-fluid  portfolio-content">
-            <h2>Contact Form</h2>
+            <h2>Contact Us</h2>
+            <h3>Send me an email below to discuss your project</h3>
         </article>
     </section>
-    <section id="contact-form">
+    <section id="contact-form" class="backgroundTexture">
         <div class="container-fluid">
             <form class="contact-form">
-                   <input name="firstName"  type="text" placeholder="FirstName"/><br><br>
-                   <input name="lastName" type="text" placeholder="LastName"/><br><br>
-                   <textarea id="msg" name="user_message" placeholder="Message"></textarea><br><br>
-                   <button class="btn btn-primary "name="submit" type="submit">Send</button>
+            
+                
+                   <input class="col-xs-12 col-sm-12 col-md-6  col-lg-6 addMargin1" name="firstName"  type="text" placeholder="FirstName" />
+                   <input class="col-xs-12 col-sm-12 col-md-6  col-lg-6 addMargin2" name="lastName" type="text" placeholder="LastName"/>
+            
+              
+                      <input  class="col-xs-12 col-sm-12 col-md-6  col-lg-6 addMargin1"  name="email" type="email" placeholder="Email" />
+
+                    
+                    <select  class="col-xs-12 col-sm-12 col-md-6  col-lg-6 addMargin2" >
+                          <option value="select" >Project Type</option>
+                          <option value="WebDevelopment" >Website Project</option>
+                          <option value="database">Database Application</option>
+                          <option value="Design Project" >E-Commerce Project</option>
+                          <option value="Design Project">Job Offer</option>
+                    </select>
+            
+         
+                   <textarea class="col-xs-12 col-sm-12 col-md-12  col-lg-12" id="msg" name="user_message" placeholder="Tell me about your project"></textarea><br><br>
+                   <button class="btn btn-primary customBtn"name="submit" type="submit">Send</button>
              </form>
         </div>
     
@@ -163,6 +180,7 @@
     <footer>
         <p>© 2018 Chris Kissoon All Rights Reserved</p> 
     </footer>
+</main>
   <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
   <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

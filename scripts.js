@@ -15,7 +15,7 @@ $(document).ready(function(){
   });
   $winHeight =  $(window).height()
   $(window).on('scroll', function() {
-        if($(window).scrollTop() >  $winHeight-81){
+        if($(window).scrollTop() >  $winHeight-85){
             
             $(".navbar").addClass("navbar1");
             $("#bs-example-navbar-collapse-1 ul li a").css("color", "black");
@@ -41,34 +41,18 @@ $(document).ready(function(){
    
 });
 
+
     
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top-80
+        }, 1000);
+    }
+});    
 
-
-$(".navEl").on('click', function(event) {
-     
-     $('.nav li > a').removeClass('active1');
-     $(this).addClass('active1');     
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-   
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-     
-      $('html, body').animate({
-        scrollTop: $(hash).position().top - 80
-      }, 800, function(){
-  
-        // Add hash (#) to URL when done scrolling (default click behavior)
-       
-      });
-    
-    } // End if
-  }); 
   
   $(window).on('scroll', function() {
           $('.target').each(function() {
@@ -81,8 +65,8 @@ $(".navEl").on('click', function(event) {
       });
    
 });   
-    
-    
+
+
 
 //var vHeight = window.innerHeight;
 //var newHeight = vHeight - 100;
