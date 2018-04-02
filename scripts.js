@@ -4,8 +4,8 @@ $(window).on("load",function(){
      if($(window).scrollTop() >  $winHeight-90){
             
             $(".navbar").addClass("navbar1");
-            $("#bs-example-navbar-collapse-1 ul li a").css("color", "black");
-            $("#bs-example-navbar-collapse-1 ul li a").hover(function(){
+            $(".navbar-default .navbar-nav>li>a").css("color", "black");
+            $(".navbar-default .navbar-nav>li>a").hover(function(){
                                 $(this).css("color", "#c1272d");
                                 }, function(){
                                 $(this).css("color", "black");
@@ -14,8 +14,8 @@ $(window).on("load",function(){
             
         }else{
             $(".navbar").removeClass("navbar1");
-            $("#bs-example-navbar-collapse-1 ul li a").css("color", "white");
-            $("#bs-example-navbar-collapse-1 ul li a").hover(function(){
+            $(".navbar-default .navbar-nav>li>a").css("color", "white");
+            $(".navbar-default .navbar-nav>li>a").hover(function(){
                                 $(this).css("color", "#c1272d");
                                 }, function(){
                                 $(this).css("color", "white");
@@ -53,7 +53,7 @@ $(window).on("load",function(){
 
 $(document).ready(function(){
     
-    
+
  //Call owl-carousel slider   
   $(".owl-carousel").owlCarousel({
       
@@ -73,8 +73,8 @@ $(document).ready(function(){
         if($(window).scrollTop() >  $winHeight-90){
             
             $(".navbar").addClass("navbar1");
-            $("#bs-example-navbar-collapse-1 ul li a").css("color", "black");
-            $("#bs-example-navbar-collapse-1 ul li a").hover(function(){
+            $(".navbar-default .navbar-nav>li>a").css("color", "black");
+            $(".navbar-default .navbar-nav>li>a").hover(function(){
                                 $(this).css("color", "#c1272d");
                                 }, function(){
                                 $(this).css("color", "black");
@@ -83,8 +83,8 @@ $(document).ready(function(){
             
         }else{
             $(".navbar").removeClass("navbar1");
-            $("#bs-example-navbar-collapse-1 ul li a").css("color", "white");
-            $("#bs-example-navbar-collapse-1 ul li a").hover(function(){
+            $(".navbar-default .navbar-nav>li>a").css("color", "white");
+            $(".navbar-default .navbar-nav>li>a").hover(function(){
                                 $(this).css("color", "#c1272d");
                                 }, function(){
                                 $(this).css("color", "white");
@@ -99,6 +99,7 @@ $(document).ready(function(){
 
     
 $('a[href^="#"]').on('click', function(event) {
+    $(".mobile-nav").fadeOut(200);
     var target = $(this.getAttribute('href'));
   
    if(target[0]["id"] == 4){

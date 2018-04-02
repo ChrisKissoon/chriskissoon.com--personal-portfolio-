@@ -22,7 +22,7 @@
         <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
             <div class="container-fluid custom-container">
                  <div class="navbar-header custom-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed nav-bar-button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -35,7 +35,7 @@
                         <img class="logo" alt="Brand" src="images/logo12.svg" >
                     </a>
                  </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="mobile-nav" id="">
                      <ul class="nav navbar-nav navbar-right" >
                         <li ><a class="navEl"  href="#1">Home</a></li>
                         <li  ><a class="navEl"  href="#2">Portfolio</a></li>

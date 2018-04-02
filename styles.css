@@ -137,12 +137,21 @@ body {
     
     
 }
-#bs-example-navbar-collapse-1 ul li a{
-    color:white;
+.mobile-nav{
+   
+}
+.mobile-nav ul li > a{
+    color:white ;
     transition:all ease-in .3s;
 }
-#bs-example-navbar-collapse-1 ul li a:hover{
+.navbar-default .navbar-nav>li>a{
+     color:white ;
+}
+.mobile-nav ul li a:hover{
     color:#a92327;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+     color:#a92327;
 }
 .logo{
     width:200px;
@@ -660,29 +669,82 @@ width:100%;
 }
 
 @media only screen and (max-width: 768px) {
+        .navbar-default .navbar-nav>li>a{
+             color:white !important;
+        }
+        .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+             color:#a92327 !important;
+        }
     
- 
-/*
-  .headerText{
-    width:90%;
-    font-size:30px;
-    margin:0 auto;
-    padding-bottom:20px;
-    color:white;
-    letter-spacing:5px;
-    font-weight:bold;
-    line-height:80px;
-}
-.subHeader{
-    padding-bottom:20px;
-    font-size:15px;
-    letter-spacing:5px;
+    .container-fluid{
+        width:100%;
+    }
+
+    .nav-bar-button{
+        z-index:1000;
+        border-radius:0px;
+        border:none;
+        transition: all ease-in .2s;
+        background-color:#a42121 ;
+    }
+    .nav-bar-button:hover{
+       
+          background-color:#a42121 !important;
+         
+    }
+     .nav-bar-button:active{
+       
+          background-color:#a42121 !important;
+         
+    }
+     .nav-bar-button:focus{
+       
+          background-color:#a42121 !important;
+         
+    }
     
-    color:white;
-}  
-*/
+    .navbar-default .navbar-toggle{
+        border:none;
+        transition: all ease-in .2s;
+    }
+    .navbar-default .navbar-toggle .icon-bar{
+       background-color:#fff;
+        transition: all ease-in .2s;
+        
+    }
     
+      .nav-bar-button:hover {
+        z-index:1000;
+        border-radius:0px;
+        border:none;
     
+    }
+   .nav-bar-button:hover > .icon-bar{
+      
+            background-color:#fff;
+    
+    }
+    .navbar-default .navbar-toggle:hover{
+        border:none;
+    }
+   
+    
+    .mobile-nav{
+      
+        border:none;
+        text-align:center;
+        background-color:#232323;
+        overflow:hidden;
+        height:100vh;
+        width:100%;
+        position:absolute;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+        padding-top:25vh;
+    }
+
     
     /* For mobile phones: */
     .story{
@@ -690,22 +752,12 @@ width:100%;
     margin:0 auto;
     padding:100px;
 }
-  
-.container-fluid{
-    width:95%;
-}
-.custom-container{
-    width:95%;
-    height:80px;
-    padding-top:15px;
-}
-.custom-fluid{
-    width:95%;
-}
-    #bs-example-navbar-collapse-1{
-    border:none;
-       
-        background-color:none;
+
+
+
+    .navbar-nav>li>a{
+        padding:30px 0px;
+        font-size:30px;
     }
     
 }
