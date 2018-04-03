@@ -354,14 +354,7 @@ h2::after {
   
 }
 
-/*
-.serImages{
-    
-   width:25%;
-   
-    
-}
-*/
+
 .serImages{
   
 }
@@ -389,7 +382,7 @@ h2::after {
     height:100px;
 }
 .story{
-    width:50%;
+    width:80%;
     margin:0 auto;
     padding:100px;
 }
@@ -669,13 +662,55 @@ width:100%;
 }
 
 @media only screen and (max-width: 768px) {
-        .navbar-default .navbar-nav>li>a{
-             color:white !important;
-        }
-        .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-             color:#a92327 !important;
-        }
+    .newCon{
+        width:95%;
+    }
+    .serImages{
+        width:50%;
+        float:left;
+    }
+    .filterable{
+        width:100%;
+        padding:0px;
+    }
+     .filterable > button:last-child{
+        
+        margin-bottom:20px;
+    }
     
+    .portfolio-intro article > h3{
+        font-size:20px;
+    
+    }
+    
+    .nav-bar-button .icon-bar:nth-of-type(3) {
+    top: 1px;
+}
+    .navbar-toggle .icon-bar:nth-of-type(4) {
+  	top: 2px;
+}
+ .nav-bar-button .icon-bar {
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+     .nav-bar-button.activet .icon-bar:nth-of-type(3) {
+   background-color: transparent;
+         
+}
+ .nav-bar-button.activet .icon-bar:nth-of-type(4) {
+    
+      top: -6px;
+    transform: rotate(-45deg);
+     
+}
+ .nav-bar-button.activet .icon-bar:nth-of-type(2) {
+      top: 6px;
+      transform: rotate(45deg);
+   
+}
+
+    
+       
     .container-fluid{
         width:100%;
     }
@@ -685,47 +720,41 @@ width:100%;
         border-radius:0px;
         border:none;
         transition: all ease-in .2s;
-        background-color:#a42121 ;
+        background-color:transparent;
     }
-    .nav-bar-button:hover{
-       
-          background-color:#a42121 !important;
-         
-    }
-     .nav-bar-button:active{
-       
-          background-color:#a42121 !important;
-         
-    }
-     .nav-bar-button:focus{
-       
-          background-color:#a42121 !important;
-         
-    }
+    
     
     .navbar-default .navbar-toggle{
         border:none;
         transition: all ease-in .2s;
     }
     .navbar-default .navbar-toggle .icon-bar{
-       background-color:#fff;
+         background-color:#fff;
         transition: all ease-in .2s;
         
     }
+    .navbar-default .navbar-toggle > .icon-bar1{
+        background-color:#a42121;
+    }
+    .nav-bar-button:hover .icon-bar{
+      
+            background-color:#fff;
     
+    }
+    .nav-bar-button:hover > .icon-bar1{
+      
+            background-color:#a42121;
+    
+    }
       .nav-bar-button:hover {
         z-index:1000;
         border-radius:0px;
         border:none;
     
     }
-   .nav-bar-button:hover > .icon-bar{
-      
-            background-color:#fff;
-    
-    }
+   
     .navbar-default .navbar-toggle:hover{
-        border:none;
+            border:none;
     }
    
     
@@ -733,26 +762,47 @@ width:100%;
       
         border:none;
         text-align:center;
-        background-color:#232323;
+        
         overflow:hidden;
         height:100vh;
-        width:100%;
+        width:0%;
         position:absolute;
         top:0px;
         bottom:0px;
         left:0px;
         right:0px;
         padding-top:25vh;
+        opacity:1;
+        transition:background-color .5s;
+        
     }
-
+    .mobile-nav-open{
+        
+        width:100%;
+        background-color:#232323;
+       
+    }
     
     /* For mobile phones: */
     .story{
     width:80%;
     margin:0 auto;
-    padding:100px;
+      
+    padding-left:20px;
+        padding-right:20px;
+        
 }
-
+    .contactIntro article > h3{
+        font-size:20px;
+    }
+    .addMargin1{
+        width:100%;
+        margin-right:0px;
+    }
+     .addMargin2{
+        width:100%;
+         margin-left:0px;
+    }
 
 
     .navbar-nav>li>a{
@@ -760,9 +810,80 @@ width:100%;
         font-size:30px;
     }
     
+    
+    .navbar-default .navbar-toggle:hover{
+        background-color:transparent;
+    }
+    .navbar-default .navbar-toggle:focus{
+        background-color:transparent;
+        
+    }
 }
 
-  
+ @media only screen and (max-width: 550px) {
+     .services{
+         padding-top:40px;
+         padding-bottom:40px;
+     }
+      .newCon{
+        width:95%;
+    }
+    .serImages{
+        width:100%;
+        float:left;
+    }
+     .portfolio-intro{
+         padding:50px 0px;
+     }
+     .portfolio-intro article > h3{
+         font-size:16px;
+     }
+     .story > p{
+         letter-spacing:0px;
+         line-height:30px;
+         text-align:justify;
+     }
+}
+ @media only screen and (max-width:470px) {
+     .headerText{
+         font-size:20px;
+     }
+     .portfolio-intro article > h3
+     .portfolio-intro article > h2{
+         font-size:25px;
+     }
+     .portfolio-intro article > h3{
+         font-size:16px;
+     }
+     
+}
+ @media only screen and (max-width:370px) {
+     .contactIntro article > h2::before,h2::after {
+    display: inline-block;
+    content: "";
+    border-top: none;
+    width: 0px;
+    margin: 0px 0px;
+    transform: translateY(0px);
+}
+     .portfolio-intro article > h2::before, h2::after{
+         display: inline-block;
+    content: "";
+    border-top: none;
+    width: 0px;
+    margin: 0px 0px;
+    transform: translateY(0px);
+     }
+}
+ @media only screen and (max-width:430px) {
+     .portfolio-intro article > h2{
+         font-size:20px;
+     }
+     .portfolio-intro article > h3{
+         font-size:16px;
+     }
+     
+}
 @media screen and (min-width:1200px) and (max-width:1500px) {
     
   

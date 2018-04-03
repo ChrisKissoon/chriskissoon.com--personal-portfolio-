@@ -24,8 +24,8 @@
                  <div class="navbar-header custom-header">
                     <button type="button" class="navbar-toggle collapsed nav-bar-button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar "></span>
+                        <span class="icon-bar  "></span>
                         <span class="icon-bar"></span>
                     </button> 
                      
@@ -101,22 +101,22 @@
     <section   class="services backgroundTexture ">
         <div class="row newCon">
             
-             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3  serImages" >
+             <div class="col-sm-6 col-md-6 col-lg-3  serImages" >
                  <img src="images/settings.svg"/>
                <div><h3 class="bold">Web Development</h3>
                  <p>Functional | Responsive | Optimized & Clean Code</p></div>  
              </div>
-             <div class="col-xs-6 col-sm-6 col-md-6  col-lg-3  serImages">
+             <div class="col-sm-6 col-md-6  col-lg-3  serImages">
                  <img src="images/coding.svg"/>
                  <div> <h3 class="bold">Web Design</h3>
                  <p>Define Goals | User Experience | Strategic Design</p></div> 
              </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3  serImages">
+            <div class="col-sm-6 col-md-6 col-lg-3  serImages">
                  <img src="images/edit.svg"/>
                 <div><h3 class="bold">Copywriting</h3>
                  <p>Problem Solving | Research | Better Solution</p></div>  
              </div>
-             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3  serImages">
+             <div class="col-sm-6 col-md-6 col-lg-3  serImages">
                  
                  <img src="images/bar-chart.svg"/>
                  <div><h3 class="bold">SEO</h3>
